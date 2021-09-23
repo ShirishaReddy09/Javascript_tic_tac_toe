@@ -1,0 +1,481 @@
+<html>
+    <head>
+        <title>Tic tac Toe game</title>
+        <link rel="stylesheet" href="tic-tac-toe.css"/>
+    </head>
+    <body>
+        <h1 align="center" style="color:white">Tic-tac-toe</h1><br><br>
+        <div class="players">
+            <button id="p_x" style="background-color: crimson;"><pre>  Player_X  </pre></button>
+            <button id="p_o" style="background-color:white;"><pre>  Player_O  </pre></button>
+        </div>
+        <br>
+        <h3 id="turn">X's turn</h3>
+        
+        <div class="buttons">
+            <div class="row_1">
+                <input onclick="fun_1();myfunc();" type="button" id="c1"/>
+                <input onclick="fun_2();myfunc();" type="button" id="c2" />
+                <input type="button" id="c3" onclick="fun_3();myfunc();"/>
+            </div>
+            <div class="row_2">
+                <input type="button" id="c4" onclick="fun_4();myfunc();"/>
+                <input type="button" id="c5" onclick="fun_5();myfunc();"/>
+                <input type="button" id="c6" onclick="fun_6();myfunc();"/>
+            </div>
+            <div class="row_3"/>
+            <input type="button" id="c7" onclick="fun_7();myfunc();"/>
+            <input type="button" id="c8" onclick="fun_8();myfunc();"/>
+            <input type="button" id="c9" onclick="fun_9();myfunc();"/>
+            </div>      
+        </div><br><br>
+        <div id="win" style="text-align:center;"></div><br>
+        <div style="text-align:center;"><button onclick="reset()" id="reset">Reset Game</button></div>
+        <script>
+            flag=1;
+            function fun_1()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c1").value="X";
+                document.getElementById("c1").disabled=true;
+                flag=0;
+                document.getElementById("p_o").style.backgroundColor="crimson";
+                document.getElementById("p_x").style.backgroundColor="white";
+                document.getElementById("turn").innerHTML="O's turn";
+                }
+                else
+                {
+                    document.getElementById("c1").value="O";
+                    document.getElementById("c1").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";   
+                }             
+            }
+            function fun_2()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c2").value="X";
+                    document.getElementById("c2").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+                }
+                else
+                {
+                    document.getElementById("c2").value="O";
+                    document.getElementById("c2").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+                
+            }
+            function fun_3()
+            {
+                if(flag==1)
+                {
+                    document.getElementById("c3").value="X";
+                    document.getElementById("c3").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+                    
+                }
+                else
+                {
+                    document.getElementById("c3").value="O";
+                    document.getElementById("c3").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+                
+            }
+            function fun_4()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c4").value="X";
+                document.getElementById("c4").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+                }
+                else
+                {
+                    document.getElementById("c4").value="O";
+                    document.getElementById("c4").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+                
+            }
+            function fun_5()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c5").value="X";
+                document.getElementById("c5").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+                }
+                else
+                {
+                    document.getElementById("c5").value="O";
+                    document.getElementById("c5").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+                
+            }
+            function fun_6()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c6").value="X";
+                document.getElementById("c6").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+                }
+                else
+                {
+                    document.getElementById("c6").value="O";
+                    document.getElementById("c6").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+                
+            }
+            function fun_7()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c7").value="X";
+                    document.getElementById("c7").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+                }
+                else
+                {
+                    document.getElementById("c7").value="O";
+                    document.getElementById("c7").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+                
+            }
+            function fun_8()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c8").value="X";
+                    document.getElementById("c8").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+
+                }
+                else
+                {
+                    document.getElementById("c8").value="O";
+                    document.getElementById("c8").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+                
+            }
+            function fun_9()
+            {
+                if(flag==1)
+                {
+                document.getElementById("c9").value="X";
+                    document.getElementById("c9").disabled=true;
+                    flag=0;
+                    document.getElementById("p_o").style.backgroundColor="crimson";
+                    document.getElementById("p_x").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="O's turn";
+                }
+                else
+                {
+                    document.getElementById("c9").value="O";
+                    document.getElementById("c9").disabled=true;
+                    flag=1;
+                    document.getElementById("p_x").style.backgroundColor="crimson";
+                    document.getElementById("p_o").style.backgroundColor="white";
+                    document.getElementById("turn").innerHTML="X's turn";
+                }
+               
+            }
+            function myfunc() 
+            {
+ 
+                    var c1, c2, c3, c4, c5, c6, c7, c8, c9;
+                    c1 = document.getElementById("c1").value;
+                    c2 = document.getElementById("c2").value;
+                    c3 = document.getElementById("c3").value;
+                    c4 = document.getElementById("c4").value;
+                    c5 = document.getElementById("c5").value;
+                    c6 = document.getElementById("c6").value;
+                    c7 = document.getElementById("c7").value;
+                    c8 = document.getElementById("c8").value;
+                    c9 = document.getElementById("c9").value;
+
+                    if ((c1 == 'X') && (c2 == 'X') && (c3 == 'X')) 
+                    {
+                        document.getElementById('win').innerHTML = "Player X won";
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player X won!');
+                    }
+                    else if ((c1 == 'X') && (c4 == 'X') && (c7 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+
+                        window.alert('Player X won!');
+                    }
+                    else if ((c7 == 'X') && (c8 == 'X') && (c9 == 'X'))
+                         {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        window.alert('Player X won!');
+                    }
+                    else if ((c3 == 'X') && (c6 == 'X') && (c9 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        window.alert('Player X won!');
+                    }
+                    else if ((c1 == 'X') && (c5 == 'X') &&(c9 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        window.alert('Player X won!');
+                    }
+                    else if ((c3 == 'X') && (c5 == 'X') && (c7 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player X won!');
+                    }
+                    else if ((c2 == 'X') && (c5 == 'X') && (c8 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player X won!');
+                    }
+                    else if ((c4 == 'X') && (c5 == 'X') && (c6 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player X won!');
+                    }
+
+                    // Checking of Player X finsh
+                    // Checking for Player 0 starts, Is player 0 won or
+                    // not and after that disabled all the other fields
+                    else if ((c1 == 'X') && (c2 == 'X') && (c3 == 'X')) 
+                    {
+                        document.getElementById('win').innerHTML = "Player O won";
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player O won!');
+                    }
+                    else if ((c1 == 'X') && (c4 == 'X') && (c7 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player O won";
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+
+                        window.alert('Player O won!');
+                    }
+                    else if ((c7 == 'X') && (c8 == 'X') && (c9 == 'X'))
+                         {
+                        document.getElementById('win')
+                            .innerHTML = "Player O won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        window.alert('Player O won!');
+                    }
+                    else if ((c3 == 'X') && (c6 == 'X') && (c9 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player X won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c5").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        window.alert('Player O won!');
+                    }
+                    else if ((c1 == 'X') && (c5 == 'X') &&(c9 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player O won";
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        window.alert('Player O won!');
+                    }
+                    else if ((c3 == 'X') && (c5 == 'X') && (c7 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player O won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player O won!');
+                    }
+                    else if ((c2 == 'X') && (c5 == 'X') && (c8 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player O won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c4").disabled = true;
+                        document.getElementById("c6").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player O won!');
+                    }
+                    else if ((c4 == 'X') && (c5 == 'X') && (c6 == 'X'))
+                     {
+                        document.getElementById('win')
+                            .innerHTML = "Player O won";
+                        document.getElementById("c1").disabled = true;
+                        document.getElementById("c2").disabled = true;
+                        document.getElementById("c3").disabled = true;
+                        document.getElementById("c7").disabled = true;
+                        document.getElementById("c8").disabled = true;
+                        document.getElementById("c9").disabled = true;
+                        window.alert('Player O won!');
+                    }
+
+
+                    // Checking of Player 0 finsh
+                    // Here, Checking about Tie
+                    else if ((c1 == 'X' || c1 == 'O') && (c2 == 'X'
+                        || c2 == 'O') && (c3 == 'X' || c3 == 'O') &&
+                        (c4 == 'X' || c4 == 'O') && (c5 == 'X' ||
+                        c5 == 'O') && (c6 == 'X' || c6 == 'O') &&
+                        (c7 == 'X' || c7 == 'O') && (c8 == 'X' ||
+                        c8 == 'O') && (c9 == 'X' || c9 == 'O')) {
+                            document.getElementById('win')
+                                .innerHTML = "Match Tie";
+                            window.alert('Match Tie!');
+                    }
+                    }
+
+                    // Function to reset game
+                    function reset() {
+                    location.reload();
+                    document.getElementById('c1').value = '';
+                    document.getElementById("c2").value = '';
+                    document.getElementById("c3").value = '';
+                    document.getElementById("c4").value = '';
+                    document.getElementById("c5").value = '';
+                    document.getElementById("c6").value = '';
+                    document.getElementById("c7").value = '';
+                    document.getElementById("c8").value = '';
+                    document.getElementById("c9").value = '';
+
+                    }
+
+
+        
+
+        </script>
+   </body>
+</html>

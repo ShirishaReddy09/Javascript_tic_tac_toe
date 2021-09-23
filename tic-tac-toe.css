@@ -1,0 +1,114 @@
+body{
+ background-color:burlywood;
+}
+.players
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#p_o
+{
+    margin-right:200px;
+}
+#p_x
+{
+    margin-left:200px;
+}
+#turn
+{
+    text-align:center;
+    color:red;
+    
+}
+.buttons
+{
+    display: flex;
+    flex-direction:column;
+}
+.row_1
+{ 
+    display: flex;
+    flex-direction: row;
+    margin-left: 350px;
+}
+.row_2
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 350px;
+}
+.row_3
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 350px;
+}
+#c1
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+}
+#c2
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+}
+#c3
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+
+}
+#c4
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+
+}
+#c5
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+}
+#c6
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+}
+#c7
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+}
+#c8
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+}
+#c9
+{
+    height:100px;
+    width: 100px;
+    font-size:50px;
+
+}
+#reset
+{
+    color:blue;
+}
