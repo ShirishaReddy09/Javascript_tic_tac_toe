@@ -1,1 +1,1 @@
-# Javasscript_tic_tac_toe
+# Javascript_tic_tac_toe
